@@ -3,13 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="PrismDeNwnpOnTab.Views.MainPage"
-             Title="MainPage">
-  
+             x:Class="PrismDeNwnpOnTab.Views.SubPage"
+             Title="SubPage">
+
   <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-    <Label Text="（ナビページなし）" />
-    <Label Text="メインページです" />
-    <Button Text="サブページへ" Command="{Binding GoSubCommand}" />
+    <Label Text="サブページです" />
+    <Button Text="戻る" Command="{Binding GoMainCommand}" />
   </StackLayout>
-  
+
 </ContentPage>
